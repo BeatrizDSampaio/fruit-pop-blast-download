@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR" data-repo="BeatrizDSampaio/fruit-pop-blast-download">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fruit Pop Blast · Baixar para Android</title>
+  <meta name="description" content="Baixe o APK mais recente do Fruit Pop Blast, o puzzle de frutas do Moranguinho: encaixe as peças, complete linhas e colunas e estoure as frutas no paraíso tropical.">
+  <meta name="theme-color" content="#1aa9cf">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fruit Pop Blast · Baixar para Android">
+  <meta property="og:description" content="O puzzle de frutas do Moranguinho. Baixe a versão mais recente e jogue no seu Android.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/scene.webp">
+  <link rel="preload" as="image" href="assets/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#baixar">Pular para o download</a>
+
+  <header class="hero" id="topo">
+    <div class="hero__scene" aria-hidden="true">
+      <img src="assets/scene.webp" alt="" width="941" height="1672" fetchpriority="high">
+    </div>
+    <img class="deco deco--leaf-tl" src="assets/leaves.webp" alt="" width="217" height="165" aria-hidden="true">
+    <img class="deco deco--hibiscus-tr" src="assets/hibiscus.webp" alt="" width="254" height="221" aria-hidden="true">
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__logo">
+          <img src="assets/logo.webp" alt="Fruit Pop Blast" width="770" height="423">
+        </h1>
+        <p class="hero__lede">
+          O puzzle de frutas do Moranguinho. Encaixe as peças, complete linhas e colunas
+          e estoure tudo pelas fases do paraíso tropical.
+        </p>
+
+        <div class="download" id="baixar" data-state="loading">
+          <a class="cta" id="cta" href="#" aria-describedby="release-meta">
+            <svg class="cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3.5v11.2m0 0 4.6-4.6M12 14.7 7.4 10.1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 15.5v2.2a2.8 2.8 0 0 0 2.8 2.8h9.4a2.8 2.8 0 0 0 2.8-2.8v-2.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+            <span class="cta__label">Baixar para Android</span>
+          </a>
+          <p class="release" id="release-meta" aria-live="polite">
+            <span class="release__line" data-slot="line">Buscando a versão mais recente…</span>
+            <span class="release__date" data-slot="date"></span>
+          </p>
+          <p class="release__all" data-slot="all" hidden>
+            <a href="#" data-slot="all-link">Ver todas as versões</a>
+          </p>
+        </div>
+
+        <aside class="qr" id="qr" hidden>
+          <div class="qr__code" data-slot="qr" aria-hidden="true"></div>
+          <p>Está no computador? Aponte a câmera do celular para baixar direto nele.</p>
+        </aside>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <div class="phone">
+          <img src="assets/home.webp" alt="" width="640" height="1137">
+        </div>
+        <img class="stage__char stage__char--pineapple" src="assets/char-pineapple.webp" alt="" width="432" height="459">
+        <img class="stage__char stage__char--coconut" src="assets/char-coconut.webp" alt="" width="365" height="329">
+      </div>
+      <div class="mascot" id="mascot" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="play" id="como-jogar" aria-labelledby="play-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 48c120-26 240-34 360-20s240 40 360 34 240-40 360-46 240 18 360 30V80H0z"/>
+      </svg>
+      <div class="play__inner">
+        <div class="play__copy">
+          <h2 id="play-title">Encaixe, complete, estoure.</h2>
+          <p class="play__intro">
+            Um tabuleiro 7×7, três peças na bandeja e nenhuma rotação: você só escolhe onde cada uma cai.
+            Fecha uma linha ou coluna e as frutas estouram.
+          </p>
+          <ol class="rules">
+            <li><img src="assets/fruit-orange.webp" alt="" width="144" height="144"><span><strong>Arraste da bandeja.</strong> Cada peça entra do jeito que veio, então pense antes de soltar.</span></li>
+            <li><img src="assets/fruit-kiwi.webp" alt="" width="144" height="144"><span><strong>Feche linhas e colunas.</strong> Fechar várias de uma vez vale combo.</span></li>
+            <li><img src="assets/fruit-strawberry.webp" alt="" width="144" height="144"><span><strong>Cumpra o objetivo.</strong> Cada fase pede frutas certas. Estoure a quantia e a fase é sua.</span></li>
+          </ol>
+          <dl class="facts">
+            <div><dt>62</dt><dd>fases</dd></div>
+            <div><dt>7</dt><dd>frutas</dd></div>
+            <div><dt>12</dt><dd>formatos de peça</dd></div>
+          </dl>
+        </div>
+
+        <figure class="demo" aria-label="Demonstração: duas peças fecham uma linha e depois uma coluna com duas linhas ao mesmo tempo">
+          <div class="demo__hud">
+            <div class="hud__goal">
+              <img src="assets/fruit-strawberry.webp" alt="" width="144" height="144">
+              <span><span data-slot="goal">0</span>/12</span>
+            </div>
+            <div class="hud__score"><span class="hud__label">Pontos</span> <span data-slot="score">0</span></div>
+          </div>
+          <div class="demo__board" id="board">
+            <div class="demo__grid" data-slot="grid"></div>
+            <div class="demo__fx" data-slot="fx" aria-hidden="true"></div>
+            <p class="demo__toast" data-slot="toast" aria-hidden="true"></p>
+          </div>
+          <div class="demo__tray" data-slot="tray"></div>
+        </figure>
+      </div>
+
+      <ul class="fruits" aria-label="As sete frutas do jogo">
+        <li><img src="assets/fruit-strawberry.webp" alt="" width="144" height="144">Morango</li>
+        <li><img src="assets/fruit-watermelon.webp" alt="" width="144" height="144">Melancia</li>
+        <li><img src="assets/fruit-grape.webp" alt="" width="144" height="144">Uva</li>
+        <li><img src="assets/fruit-kiwi.webp" alt="" width="144" height="144">Kiwi</li>
+        <li><img src="assets/fruit-blueberry.webp" alt="" width="144" height="144">Mirtilo</li>
+        <li><img src="assets/fruit-orange.webp" alt="" width="144" height="144">Laranja</li>
+        <li><img src="assets/fruit-lemon.webp" alt="" width="144" height="144">Limão</li>
+      </ul>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 30c140 22 260 30 380 18s250-40 370-40 230 34 350 40 220-10 340-24V80H0z"/>
+      </svg>
+    </section>
+
+    <section class="install" id="instalar" aria-labelledby="install-title">
+      <div class="install__inner">
+        <img class="install__char" src="assets/char-watermelon.webp" alt="" width="328" height="378" aria-hidden="true">
+        <div class="install__copy">
+          <h2 id="install-title">Instale em um minuto</h2>
+          <ol class="steps">
+            <li>
+              <span class="steps__n" aria-hidden="true">1</span>
+              <p><strong>Baixe no celular.</strong> Toque em “Baixar para Android” nesta página, pelo próprio Android.</p>
+            </li>
+            <li>
+              <span class="steps__n" aria-hidden="true">2</span>
+              <p><strong>Abra o arquivo.</strong> Se o Android perguntar, permita instalar apps vindos do navegador. É o aviso padrão para apps fora da Play Store.</p>
+            </li>
+            <li>
+              <span class="steps__n" aria-hidden="true">3</span>
+              <p><strong>Jogue.</strong> As próximas versões instalam por cima desta, sem perder o seu progresso.</p>
+            </li>
+          </ol>
+          <a class="cta cta--small" href="#baixar" data-cta-mirror>
+            <svg class="cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3.5v11.2m0 0 4.6-4.6M12 14.7 7.4 10.1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 15.5v2.2a2.8 2.8 0 0 0 2.8 2.8h9.4a2.8 2.8 0 0 0 2.8-2.8v-2.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+            <span class="cta__label">Baixar a versão mais recente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo.webp" alt="Fruit Pop Blast" width="770" height="423" loading="lazy">
+    <p>Beta para Android<span data-slot="footer-version"></span>.</p>
+  </footer>
+</body>
+</html>
